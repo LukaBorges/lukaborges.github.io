@@ -1,1 +1,76 @@
+body { 
+    background-color: cyan;
+}
 
+h1 {
+    color: red;
+    font-size: 45px;
+    text-align: center;   
+}
+
+p::first-letter {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+span {
+    color: red;
+}
+
+h2 {
+    color: blue;
+    font-size: 30px;
+    font-style: italic;
+    text-align: right;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: white;
+}
+
+table {
+    background-color: #FFFF00;
+    text-align: center;
+    animation: thebanner 5s linear 2s infinite normal;
+    -webkit-animation:thebanner 5s linear 2s infinite normal;
+}
+
+@keyframes thetable {
+    from {background-color: yellow;}
+    to {background-color: cyan;}
+}
+
+@-webkit-keyframes thetable {
+ from {background-color: yellow;}
+    to {background-color: cyan;}
+}
+
+#banner { width: 468px;
+          height: 60px;
+          text-align: center;
+          background-color: orange;
+          position: relative;
+          animation: thebanner 7s linear 2s infinite alternate;
+          -webkit-animation: thebanner 7s linear 2s infinite alternate;
+}
+
+@keyframes thebanner {
+0%   {background: red; left: 0px;}
+25%  {background: yellow; left: 600px;}
+50%  {background: blue; left: 900px;}
+75%  {background: green; left: 0px;}
+100% {background: red; left: 0px;}
+}
+
+@-webkit-keyframes thebanner {
+0%   {background: red; left: 0px;}
+25%  {background: yellow; left: 600px;}
+50%  {background: blue; left: 900px;}
+75%  {background: green; left: 0px;}
+100% {background: red; left: 0px;}
+}
