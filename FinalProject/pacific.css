@@ -1,1 +1,168 @@
-F
+body {background-image: url(background.jpg);
+      background-color: white;
+      color: darkgray;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {width: 80%;
+          min-width: 960px;
+          background-color: #90C7E3;
+          box-shadow: 5px 5px 5px 5px #828282; 
+          margin-left: auto;
+          margin-right: auto;
+}
+
+h1 {background-image: url(sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000033;
+    color: white;
+    font-family:Georgia, "Times New Roman", serif;
+    margin-bottom: 0;
+}
+
+nav {/* background-color: skyblue; I delete because I wanted the background of the nav with the same color of the background of the wrapper */
+    width: 130px;
+    float: left;
+    padding-right: 10px;
+}
+
+nav ul {font-weight: bold;
+    list-style-position: inherit;
+    font-size: 1.2em;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+#content {margin-left: 150px;
+          padding: 0 20px 0 20px; 
+}
+
+h2 {color: #3399CC;
+    font-family: Georgia, "Times New Roman", serif;
+    text-shadow: 2px 2px 2px #666;
+}
+
+img {float: left;
+     border: 0;
+     width: 180px;
+     margin: 0 15px 15px 0;
+}
+
+.resort {color: #000033;
+         font-weight: bold;
+}
+
+ul {list-style-position: inside;
+}
+
+a {text-decoration: none;
+}
+
+a:link {color: #000033;
+}
+
+a:visited {color: #344873;
+}
+
+a:hover {
+    color: white;
+}
+
+#adress {font-size: 90%;
+         clear: left;
+}
+
+footer {font-size: 75%;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+#birdanimation { width: 68px;
+          height: 181px;
+          position: relative;
+          animation: birdanimation 4s linear forwards 2s;
+          -webkit-animation: birdanimation 4s linear forwards 2s;
+}
+
+textarea {vertical-align: top;}
+
+h3 {color: #000033;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+#clearleft {clear: left;
+}
+
+input {
+    border: 1px solid #000033;
+    border-radius: 2px;
+}
+
+input:focus { 
+    background-color: #FFFF00;
+}
+
+input[type=submit] {
+    background-color: #98FB98;
+    margin-right: 2px;
+}
+
+input[type=reset] {
+    background-color: #ff6961;
+}
+
+@keyframes birdanimation {
+0%   {left: 0px;}
+25%  {left: 150px;}
+50%  {left: 300px;}
+75%  {left: 450px;}
+100% {left: 600px;}
+}
+
+@-webkit-keyframes birdanimation {
+0%   {left: 0px;}
+25%  {left: 150px;}
+50%  {left: 300px;}
+75%  {left: 450px;}
+100% {left: 600px;}
+}
+    
+@media screen and (max-width: 480px) {
+    
+    body {margin: auto;
+        color: #1c2f2f;
+    }
+    
+    #wrapper {min-width: 90%;
+    }
+    
+    h1 { background-image: none; 
+        margin: auto;
+        padding-left: 5px;
+    }
+    
+    nav {float: none;
+        padding-top: 5px;
+        padding-left: 5px;
+        min-width: 90%;
+        background-color: #90C7E3;
+    }
+    
+    #content {margin-left: 10px;
+              padding: 2px;
+    }
+    
+    nav li {display: inline;}
+    
+    ul {margin: auto;
+    padding: 0;}
+    
+    
+    img {display: none;
+    }
+    
+    #birdanimation {display: none;}
+} 
